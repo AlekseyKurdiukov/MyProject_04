@@ -51,6 +51,57 @@
           <p>8 812 450-25-25</p>
         </div>
       </header>
+      <section class="slider">
+        <h2>Крем-брюле и пломбир <br> с малиновым джемом</h2>
+        <div class="slider__wrapper">
+          <div class="slider__control">
+            <button type="button" name="button" class="btn1 active_btn"></button>
+            <button type="button" name="button" class="btn2"></button>
+            <button type="button" name="button" class="btn3"></button>
+          </div>
+          <a href="#">Давайте оба!</a>
+        </div>
+      </section>
     </div>
+
+    <script>
+      var btn1 = document.querySelector(".btn1");
+      var btn2 = document.querySelector(".btn2");
+      var btn3 = document.querySelector(".btn3");
+      var body = document.querySelector("body");
+
+      btn1.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        body.classList.remove("bg_color_2");
+        body.classList.remove("bg_color_3");
+        btn2.classList.remove("active_btn");
+        btn3.classList.remove("active_btn");
+        body.classList.add("bg_color_1");
+        btn1.classList.add("active_btn");
+
+      });
+
+      btn2.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        body.classList.remove("bg_color_1");
+        body.classList.remove("bg_color_3");
+        btn1.classList.remove("active_btn");
+        btn3.classList.remove("active_btn");
+        body.classList.add("bg_color_2");
+        btn2.classList.add("active_btn");
+
+      });
+
+      btn3.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        body.classList.remove("bg_color_2");
+        body.classList.remove("bg_color_1");
+        btn2.classList.remove("active_btn");
+        btn1.classList.remove("active_btn");
+        body.classList.add("bg_color_3");
+        btn3.classList.add("active_btn");
+
+      });
+    </script>
   </body>
 </html>
