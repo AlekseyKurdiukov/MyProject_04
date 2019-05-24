@@ -93,6 +93,14 @@ body {
   overflow: hidden;
 }
 
+.yes {
+  display: block;
+}
+
+.net {
+  display: none;
+}
+
 /* Шапка сайта */
 
 .main_header {
