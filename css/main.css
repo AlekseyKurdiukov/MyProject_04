@@ -6,19 +6,39 @@
 }
 
 body {
-  background-color: #849d8f;
-  background-image: url("../img/bg_ice_cream_1.png"), url("../img/bg_backlight_1.png");
-  background-position-y: 84px, -86px;
-  background-position-x: center, center;
-  background-repeat: no-repeat, no-repeat;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 22px;
 }
 
+.bg_color_1 {
+  background-color: #849d8f;
+  background-image: url("../img/bg_ice_cream_1.png"), url("../img/bg_backlight_1.png");
+  background-position-y: 84px, -86px;
+  background-position-x: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.bg_color_2 {
+  background-color: #8996a6;
+  background-image: url("../img/bg_ice_cream_2.png"), url("../img/bg_backlight_2.png");
+  background-position-y: 84px, -86px;
+  background-position-x: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.bg_color_3 {
+  background-color: #9d8b84;
+  background-image: url("../img/bg_ice_cream_3.png"), url("../img/bg_backlight_3.png");
+  background-position-y: 84px, -86px;
+  background-position-x: center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+
 .container {
   width: 1200px;
   padding: 0 27px;
+  margin: 0 auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -37,3 +57,133 @@ body {
 }
 
 /* Шапка сайта */
+
+.main_header {
+  margin-top: 10px;
+}
+
+  .main_header__container_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+    .site_navigation {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+    }
+
+      .logo {
+        margin-right: 10px;
+      }
+
+      .site_navigation a {
+        padding: 8px 15px;
+        border-radius: 30px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+        /* position: relative; */
+      }
+
+        .site_navigation a:hover {
+          background-color: #f7f6f3;
+          color: #000000;
+        }
+
+        .site_navigation a:active {
+          background-color: #f7f6f3;
+          color: #000000;
+          box-shadow: inset 0 2px 3px 0 #696969;
+        }
+
+        .site_navigation .active {
+          color: #ffffff !important;
+          background-color: #d07058 !important;
+          box-shadow: inset 0 0 0 0 #696969 !important;
+        }
+
+        /* .site_navigation span::before {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: #ffffff;
+          opacity: 0.2;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        } */
+
+    .user_navigation {
+      display: flex;
+      align-items: center;
+    }
+
+      .search {
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+      }
+
+        .search svg {
+          position: relative;
+          top: 1px;
+        }
+
+          .search:hover {
+            background-color: rgba(248, 247, 244, 1);
+          }
+
+          .search:hover path {
+            fill: #000000;
+          }
+
+      .login, .buy {
+        height: 30px;
+        padding: 6px 17px;
+        border: 0;
+        border-radius: 30px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin-left: 10px;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+        .login span, .buy span {
+          position: relative;
+          top: -4px;
+        }
+
+          .login:hover, .buy:hover {
+            color: #000000;
+            background-color: rgba(255, 255, 255, 1);
+          }
+
+          .login:hover polygon, .login:hover path, .buy:hover path, .buy:hover circle {
+            fill: #000000;
+          }
+
+  .main_header__schedule {
+    color: #ffffff;
+    text-align: right;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+  }
+
+    .main_header__schedule p:last-child {
+      font-size: 22px;
+      line-height: 24px;
+      margin-top: 5px;
+    }
