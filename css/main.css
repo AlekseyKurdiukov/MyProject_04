@@ -101,7 +101,7 @@ body {
   display: none;
 }
 
-/* Шапка сайта */
+/* Header */
 
 .main_header {
   margin-top: 10px;
@@ -233,7 +233,7 @@ body {
       margin-top: 5px;
     }
 
-/* Слайдер */
+/* Slider */
 
 .slider {
   text-align: center;
@@ -303,15 +303,15 @@ body {
         background: #ffffff !important;
       }
 
-/* Акции */
+/* Stock */
 
-.actions {
+.stock {
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
 }
 
-  .actions__item {
+  .stock__item {
     width: 560px;
     height: 230px;
     border-radius: 20px;
@@ -321,20 +321,20 @@ body {
     position: relative;
   }
 
-    .actions__item h2 {
+    .stock__item h2 {
       font-size: 35px;
       line-height: 41px;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
-    .actions__item p {
+    .stock__item p {
       font-size: 18px;
       line-height: 22px;
       font-weight: bold;
     }
 
-    .actions__item a {
+    .stock__item a {
       display: inline-block;
       box-sizing: border-box;
       height: 45px;
@@ -352,20 +352,69 @@ body {
       right: 20px;
     }
 
-      .actions__item a:hover {
+      .stock__item a:hover {
         background: linear-gradient(to top, #ec6f5e, #f58669);
         box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 1);
       }
 
-      .actions__item a:active {
+      .stock__item a:active {
         background: linear-gradient(to top, #e1613e, #d84732);
         box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 1);
       }
 
-  .actions__item:first-child {
+  .stock__item:first-child {
     background: #b52848 url("../img/raspberries.jpg") center center no-repeat;
   }
 
-  .actions__item:last-child {
+  .stock__item:last-child {
     background: #40271c url("../img/chocolate.jpg") center center no-repeat;
   }
+
+/* Positions */
+
+.positions {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+  .positions__item {
+    width: 270px;
+  }
+
+    .item__img {
+      position: relative;
+      margin-bottom: 13px;
+    }
+
+      .item__img .hit {
+        position: absolute;
+        z-index: 1;
+      }
+
+      .item__img .price {
+        position: absolute;
+        bottom: 20px;
+        font-size: 45px;
+        line-height: 45px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+
+        .miniature {
+          clip-path: circle(134px at center);
+        }
+
+        .item__img_mask img {
+          width: 100%;
+        }
+
+    .positions__item a {
+      display: block;
+      font-size: 16px;
+      line-height: 22px;
+      color: #ffffff;
+      text-align: center;
+    }
+
+/*  */
