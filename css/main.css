@@ -417,4 +417,54 @@ body {
       text-align: center;
     }
 
-/*  */
+/* Advantages */
+
+.advantages {
+  margin-top: 40px;
+  width: 100%;
+  border-radius: 15px;
+  padding: 25px 20px 15px 20px;
+  background: #839d8e url("../img/bg_wafer.jpg") left top;
+  color: #323232;
+}
+
+  .advantages p {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+    .advantages__item {
+      box-sizing: border-box;
+      width: 540px;
+      padding: 15px 0 0 60px;
+      margin-bottom: 10px;
+    }
+
+      .advantages__item p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+    .advantages__bg_1 {
+      background: url("../img/icon_ice.svg") top left no-repeat;
+    }
+
+    .advantages__bg_2 {
+      background: url("../img/icon_cow.svg") top left no-repeat;
+    }
+
+    .advantages__bg_3 {
+      background: url("../img/icon_sheet.svg") top left no-repeat;
+    }
+
+    .advantages__bg_4 {
+      background: url("../img/icon_thermometer.svg") top left no-repeat;
+    }
