@@ -399,7 +399,14 @@ body {
         line-height: 45px;
         font-weight: bold;
         color: #ffffff;
+        text-shadow: 0 1px 3px rgba(49, 50, 53, 0.5);
       }
+
+        .price img {
+          height: 42px;
+          position: relative;
+          top: 7px;
+        }
 
         .miniature {
           clip-path: circle(134px at center);
@@ -415,6 +422,10 @@ body {
       line-height: 22px;
       color: #ffffff;
       text-align: center;
+    }
+
+    .positions__item a:hover, .positions__item a:active {
+      color: #ffbc9e;
     }
 
 /* Advantages */
@@ -468,3 +479,51 @@ body {
     .advantages__bg_4 {
       background: url("../img/icon_thermometer.svg") top left no-repeat;
     }
+
+/* Other */
+
+.other {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+  .other__news {
+    width: 560px;
+    height: 220px;
+    padding: 25px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: #ffffff url("../img/bg_strawberry.jpg") center left no-repeat;
+    color: #323232;
+  }
+
+    .other__news h2 {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
+
+    .other__news a {
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: bold;
+      color: #323232;
+    }
+
+    .other__news a:hover {
+      color: #ffbc9e;
+    }
+
+  .other__post {
+    width: 560px;
+    height: 220px;
+    padding: 6px 6px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: repeating-linear-gradient(-45deg, #92cdff,
+    #92cdff 10px,
+    #fe9e90 10px,
+    #fe9e90 20px);
+    color: #5a5a5a;
+  }
