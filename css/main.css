@@ -302,3 +302,70 @@ body {
       .active_btn {
         background: #ffffff !important;
       }
+
+/* Акции */
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+  .actions__item {
+    width: 560px;
+    height: 230px;
+    border-radius: 20px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    position: relative;
+  }
+
+    .actions__item h2 {
+      font-size: 35px;
+      line-height: 41px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .actions__item p {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: bold;
+    }
+
+    .actions__item a {
+      display: inline-block;
+      box-sizing: border-box;
+      height: 45px;
+      padding: 12px 24px;
+      border-radius: 30px;
+      background: linear-gradient(to top, #e74a35, #f26843);
+      box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      text-decoration: none;
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+
+      .actions__item a:hover {
+        background: linear-gradient(to top, #ec6f5e, #f58669);
+        box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 1);
+      }
+
+      .actions__item a:active {
+        background: linear-gradient(to top, #e1613e, #d84732);
+        box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 1);
+      }
+
+  .actions__item:first-child {
+    background: #b52848 url("../img/raspberries.jpg") center center no-repeat;
+  }
+
+  .actions__item:last-child {
+    background: #40271c url("../img/chocolate.jpg") center center no-repeat;
+  }
