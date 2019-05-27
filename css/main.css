@@ -391,7 +391,7 @@ body {
 
   .positions__item:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.25);
     border-radius: 10px;
   }
 
@@ -707,4 +707,99 @@ body {
         .feedback a:active {
           background: linear-gradient(to top, #e1613e, #d84732);
           box-shadow: inset 0 2px 2px 0 rgba(148, 39, 24, 1);
+        }
+
+/* footer */
+
+.footer_main {
+  padding: 20px 0;
+}
+
+  .footer_main > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+    .social {
+      list-style-type: none;
+      display: flex;
+    }
+
+      .social li {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 3px solid rgba(255, 255, 255, 0.5);
+        text-align: center;
+        margin-right: 10px;
+      }
+
+      .social li:hover {
+        border: 3px solid rgba(255, 255, 255, 0.7);
+      }
+
+        .social li img {
+          position: relative;
+          opacity: 0.8;
+        }
+
+        .social li img:hover {
+          opacity: 1;
+        }
+
+    .footer__menu {
+      display: flex;
+      justify-content: space-between;
+      width: 325px;
+    }
+
+      .menu__item {
+        /* margin-right: 10px; */
+      }
+
+      .love {
+        padding-left: 20px;
+        background: url("../img/icon_love.svg") left 2px no-repeat;
+        margin-right: 30px;
+      }
+
+        .love a:first-child {
+          font-weight: bold;
+        }
+
+        .menu__item a {
+          display: block;
+          font-size: 13px;
+          line-height: 18px;
+          color: #fefefe;
+          margin-bottom: 5px;
+        }
+
+        .menu__item a:hover {
+          color: #ffbc9e;
+        }
+
+    .html_academy {
+      color: #fefefe;
+    }
+
+      .html_academy img {
+        width: 129px;
+        height: 40px;
+        position: relative;
+        left: -7px;
+      }
+
+      .html_academy p {
+        font-size: 12px;
+        line-height: 18px;
+      }
+
+        .html_academy p a {
+          color: #fefefe;
+        }
+
+        .html_academy p a:hover {
+          color: #ffbc9e;
         }
