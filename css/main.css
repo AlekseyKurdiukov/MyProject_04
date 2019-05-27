@@ -74,6 +74,7 @@ body {
 
 .container {
   width: 1200px;
+  box-sizing: border-box;
   padding: 0 27px;
   margin: 0 auto;
 }
@@ -651,8 +652,8 @@ body {
     width: 84px;
     height: 143px;
     position: absolute;
-    top: 171px;
-    left: 26%;
+    top: 157px;
+    left: 23%;
   }
 
     .feedback {
