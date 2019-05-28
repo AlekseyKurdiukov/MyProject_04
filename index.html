@@ -204,7 +204,7 @@
             </span>
             (с 10 до 20 ежедневно)
           </p>
-          <a href="#">Форма обратной связи</a>
+          <a class="feedback__link" href="#">Форма обратной связи</a>
         </div>
       </div>
     </section>
@@ -233,6 +233,21 @@
       </div>
     </footer>
 
+
+    <div class="feedback__bg">
+      <div class="feedback_blok">
+        <h2>Мы обязательно Вам ответим!</h2>
+        <form class="feedback__form" action="index.html" method="post">
+          <input type="text" name="name" value="" placeholder="Как Вас зовут?">
+          <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
+          <textarea name="review" rows="8" cols="80" placeholder="Напишите что-нибудь..."></textarea>
+          <input type="submit" name="submit" value="Отправить">
+          <button class="feedback__close" type="button" name="button"></button>
+        </form>
+      </div>
+    </div>
+
     <script src="js/slider.js"></script>
+    <script src="js/feedback_show.js"></script>
   </body>
 </html>
