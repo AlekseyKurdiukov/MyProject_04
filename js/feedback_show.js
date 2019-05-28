@@ -32,6 +32,11 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+// form__bg.addEventListener("click", function() {
+//   form__bg.classList.remove("show");
+// });
+
+
 feedback__forma.addEventListener("submit", function (evt) {
   if (!login.value || !email.value || !review.value) {
     evt.preventDefault();
