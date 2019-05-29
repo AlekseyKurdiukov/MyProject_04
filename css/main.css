@@ -180,10 +180,14 @@ body {
         box-sizing: border-box;
         background-color: rgba(255, 255, 255, 0.2);
         cursor: pointer;
-        position: relative;
+        /* position: relative; */
       }
 
-      .search:hover > .search__modal {
+        .search_container {
+          position: relative;
+        }
+
+      .search:hover + .search__modal {
         display: block;
       }
 
@@ -235,10 +239,14 @@ body {
         line-height: 16px;
         font-weight: bold;
         text-decoration: none;
-        position: relative;
+        /* position: relative; */
       }
 
-      .login:hover > .login__modal {
+        .login_container {
+          position: relative;
+        }
+
+      .login:hover + .login__modal {
         display: block;
       }
 
@@ -282,6 +290,7 @@ body {
             text-decoration: none;
             cursor: pointer;
             float: left;
+            margin-right: 15px;
           }
 
             .login__modal input[type="submit"]:hover {
