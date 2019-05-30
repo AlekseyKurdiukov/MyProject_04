@@ -1155,3 +1155,85 @@ body {
   animation-name: shake;
   animation-duration: 0.6s;
 }
+
+@media (min-width: 900px) and (max-width: 1199px)  {
+  .visually-hidden:not(:focus):not(:active),
+    input[type="checkbox"].visually-hidden,
+    input[type="radio"].visually-hidden {
+    position: static;
+  }
+
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2.25%;
+    margin: 0;
+  }
+
+  .slider__wrapper {
+    justify-content: space-between;
+  }
+
+    .slider a {
+      margin-left: 0;
+    }
+
+  .stock__item {
+    width: 48.8%;
+    /* height: 230px; */
+  }
+
+  .positions__item {
+    width: 23.5%;
+  }
+
+    .miniature {
+      clip-path: circle(91px at center);
+    }
+
+    .item__img .price {
+      font-size: 25px;
+      line-height: 20px;
+    }
+
+      .price img {
+        height: 28px;
+      }
+
+    .positions__item > a {
+      padding: 12px 1px;
+    }
+
+  .advantages__item {
+    width: 47.12%;
+  }
+
+  .other {
+    align-items: stretch;
+  }
+
+    .other__news {
+      width: 48.8%;
+      height: auto;
+    }
+
+    .other__post {
+      width: 48.8%;
+      height: auto;
+    }
+
+      .post__wrapper p {
+        margin-bottom: 10px;
+      }
+
+      .post__form {
+        position: static;
+      }
+
+        .post__form input[type=email] {
+          margin-bottom: 10px;
+        }
+
+        .post__form input[type=submit] {
+        }
+}
