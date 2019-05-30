@@ -181,6 +181,10 @@ body {
         display: none;
       }
 
+      .site_navigation__news_link:hover + .site_navigation__news {
+        display: block;
+      }
+
         .site_navigation__news li:first-child a {
           font-weight: bold;
           position: relative;
