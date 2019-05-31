@@ -436,8 +436,10 @@ body {
 }
 
   .slider__wrapper {
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    text-align: center;
+    position: relative;
   }
 
     .slider h2 {
@@ -462,7 +464,7 @@ body {
       line-height: 34px;
       text-decoration: none;
       text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-      margin-left: 32%;
+      /* margin-left: 32%; */
     }
 
       .slider a:hover {
@@ -478,6 +480,9 @@ body {
     .slider__control {
       display: flex;
       margin-left: 0;
+      position: absolute;
+      left: 0;
+      top: 23px;
     }
 
       .slider__control button {
@@ -1232,6 +1237,7 @@ body {
 
         .post__form input[type=email] {
           margin-bottom: 10px;
+          width: 60%;
         }
 
         .post__form input[type=submit] {
