@@ -379,7 +379,7 @@ body {
   line-height: 16px;
   color: #ffffff;
   margin-bottom: 10px;
-  padding-left: 20px;
+  /* padding-left: 20px; */
 }
 
 .forma__wrapper {
@@ -478,6 +478,24 @@ body {
           .checkbox_label input:checked + span::before {
             display: block;
           }
+
+input[type="submit"] {
+  display: inline-block;
+  height: 36px;
+  box-sizing: border-box;
+  padding: 7px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+  input[type="submit"]:hover {
+    border: 2px solid #ffffff;
+  }
 
 /* positions */
 
