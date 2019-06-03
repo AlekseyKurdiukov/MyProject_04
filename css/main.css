@@ -842,6 +842,7 @@ body {
 
   .map > .container {
     position: relative;
+    top: -440px;
   }
 
   .map img {

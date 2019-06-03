@@ -109,66 +109,6 @@ body {
           bottom: 0;
         } */
 
-      .site_navigation__news {
-        list-style-type: none;
-        width: 143px;
-        /* padding: 10px 20px; */
-        border-radius: 10px;
-        background-color: #f8f7f4;
-        font-size: 14px;
-        line-height: 16px;
-        box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-        position: absolute;
-        left: 0;
-        top: 55px;
-        display: none;
-      }
-
-      .site_navigation__news_link:hover + .site_navigation__news {
-        display: block;
-      }
-
-        .site_navigation__news li:first-child a {
-          font-weight: bold;
-          position: relative;
-          border-radius: 10px 10px 0 0;
-        }
-
-        .site_navigation__news li:last-child a {
-          border-radius: 0 0 10px 10px;
-        }
-
-        .site_navigation__news li:first-child a::after {
-          content: "";
-          display: block;
-          width: 128px;
-          height: 1px;
-          background-color: #d1d0ce;
-          position: absolute;
-          left: 7px;
-          bottom: 0;
-        }
-
-          .site_navigation__news a {
-            display: block;
-            color: #323232;
-            text-decoration: none;
-            padding: 8px 20px;
-            font-weight: normal;
-            border-radius: 0;
-            box-shadow: none;
-          }
-
-            .site_navigation__news a:hover {
-              background-color: #fbded8;
-              box-shadow: none;
-            }
-
-            .site_navigation__news a:active {
-              background-color: #f6b5a5;
-              box-shadow: none;
-            }
-
     .user_navigation {
       display: flex;
       align-items: center;
@@ -370,6 +310,174 @@ body {
       line-height: 24px;
       margin-top: 5px;
     }
+
+/* catalog */
+
+.catalog {
+
+}
+
+  .catalog__list {
+    list-style-type: none;
+    display: flex;
+  }
+
+    .catalog__list li {
+      padding: 0 10px;
+      position: relative;
+    }
+
+      .catalog__list li:first-child {
+        padding-left: 0;
+      }
+
+      .catalog__list li::after {
+        content: "»";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        color: #ffffff;
+        right: -6px;
+      }
+
+      .catalog__list li:last-child::after {
+        display: none;
+      }
+
+        .catalog__list li a {
+          color: #ffffff;
+          font-size: 14px;
+          line-height: 16px;
+          font-family: 'Roboto', Arial, sans-serif;
+        }
+
+.catalog__headline {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+/* filter */
+
+.forma_select {
+  border: 0;
+  background: none;
+  color: #ffffff;
+}
+
+.forma_item {
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.forma_item > span {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.forma__wrapper {
+  display: inline-block;
+  height: 36px;
+  box-sizing: border-box;
+  padding: 7px 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+  .radio_label {
+    position: relative;
+    margin-right: 20px;
+  }
+
+    .radio_label:last-child {
+      margin-right: 0;
+    }
+
+    .radio_label::before {
+      content: "";
+      width: 17px;
+      height: 17px;
+      background: none;
+      border: 4px solid #ffffff;
+      border-radius: 15px;
+      position: absolute;
+      top: -3px;
+      left: 1px;
+    }
+
+      .radio_label span {
+        padding-left: 37px;
+        font-size: 16px;
+        line-height: 18px;
+        color: #ffffff;
+        position: relative;
+      }
+
+        .radio_label span::before {
+          content: "";
+          width: 9px;
+          height: 9px;
+          background: #ffffff;
+          border-radius: 15px;
+          position: absolute;
+          top: 5px;
+          left: 9px;
+          display: none;
+        }
+
+        .radio_label input:checked + span::before {
+          display: block;
+        }
+
+    .checkbox_label {
+      position: relative;
+      margin-right: 20px;
+    }
+
+      .checkbox_label:last-child {
+        margin-right: 0;
+      }
+
+      .checkbox_label::before {
+        content: "";
+        width: 18px;
+        height: 18px;
+        background: none;
+        border: 2px solid #ffffff;
+        border-radius: 2px;
+        position: absolute;
+        top: -1px;
+      }
+
+        .checkbox_label span {
+          padding-left: 37px;
+          font-size: 16px;
+          line-height: 18px;
+          color: #ffffff;
+          position: relative;
+        }
+
+          .checkbox_label span::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            background: url("../img/icon_check.png") no-repeat;
+            position: absolute;
+            top: 0px;
+            left: 1px;
+            display: none;
+          }
+
+          .checkbox_label input:checked + span::before {
+            display: block;
+          }
 
 /* positions */
 
