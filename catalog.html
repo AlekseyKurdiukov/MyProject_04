@@ -79,18 +79,20 @@
           <ul class="catalog__list">
             <li><a href="index.html">Главная</a></li>
             <li><a href="index.html">Каталог</a></li>
-            <li><a>Сливочное</a></li>
+            <li><a class="active">Сливочное</a></li>
           </ul>
           <h2 class="catalog__headline">Сливочное мороженное</h2>
         </section>
         <section class="filter">
-          <form class="filter__forma" action="index.html" method="post">
+          <form class="filter__forma" action="php/catalog.php" method="post">
             <div class="forma_item">
               <span>Сортировка:</span>
               <div class="forma__wrapper">
                 <select class="forma_select" name="forma_select">
                   <option value="по популярности">по популярности</option>
-                  <option value="по популярности">по цене</option>
+                  <option value="по популярности">сначала недорогие</option>
+                  <option value="по популярности">сначала дорогие</option>
+                  <option value="по популярности">по жирности</option>
                 </select>
               </div>
             </div>
@@ -147,7 +149,6 @@
               </div>
             </div>
             <input type="submit" name="submit" value="Применить">
-
           </form>
         </section>
         <section class="positions">
@@ -166,7 +167,7 @@
           </div>
           <div class="positions__item">
             <div class="item__img">
-              <img class="hit visually-hidden" src="img/hit.svg" alt="Хит">
+              <img class="hit" src="img/hit.svg" alt="Хит">
               <div class="item__img_mask">
                 <img class="miniature" src="img/ice_2.jpg" alt="Мороженное">
               </div>
@@ -179,7 +180,7 @@
           </div>
           <div class="positions__item">
             <div class="item__img">
-              <img class="hit visually-hidden" src="img/hit.svg" alt="Хит">
+              <img class="hit" src="img/hit.svg" alt="Хит">
               <div class="item__img_mask">
                 <img class="miniature" src="img/ice_3.jpg" alt="Мороженное">
               </div>
@@ -192,7 +193,7 @@
           </div>
           <div class="positions__item">
             <div class="item__img">
-              <img class="hit visually-hidden" src="img/hit.svg" alt="Хит">
+              <img class="hit" src="img/hit.svg" alt="Хит">
               <div class="item__img_mask">
                 <img class="miniature" src="img/ice_4.jpg" alt="Мороженное">
               </div>
@@ -218,7 +219,7 @@
           </div>
           <div class="positions__item">
             <div class="item__img">
-              <img class="hit visually-hidden" src="img/hit.svg" alt="Хит">
+              <img class="hit" src="img/hit.svg" alt="Хит">
               <div class="item__img_mask">
                 <img class="miniature" src="img/ice_6.jpg" alt="Мороженное">
               </div>
@@ -231,7 +232,7 @@
           </div>
           <div class="positions__item">
             <div class="item__img">
-              <img class="hit visually-hidden" src="img/hit.svg" alt="Хит">
+              <img class="hit" src="img/hit.svg" alt="Хит">
               <div class="item__img_mask">
                 <img class="miniature" src="img/ice_7.jpg" alt="Мороженное">
               </div>
@@ -296,7 +297,7 @@
           </div>
           <div class="positions__item">
             <div class="item__img">
-              <img class="hit visually-hidden" src="img/hit.svg" alt="Хит">
+              <img class="hit" src="img/hit.svg" alt="Хит">
               <div class="item__img_mask">
                 <img class="miniature" src="img/ice_12.jpg" alt="Мороженное">
               </div>

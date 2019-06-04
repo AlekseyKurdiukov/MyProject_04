@@ -1,4 +1,3 @@
 <?php
-    $integer = 12;
-
+    echo print_r ($_POST);
 ?>
