@@ -10,18 +10,11 @@
     <div class="container">
       <header class="main_header">
         <div class="main_header__container_wrapper">
-          <img src="img/logo.svg" alt="GllacyShop" class="logo">
+          <a href="index.html"><img src="img/logo.svg" alt="GllacyShop" class="logo"></a>
           <nav>
             <ul class="site_navigation">
               <li>
-                <a class="site_navigation__news_link active" href="#">Каталог</a>
-                <ul class="site_navigation__news">
-                  <li><a href="#">Новинки</a></li>
-                  <li><a href="#">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
-                </ul>
+                <a class="site_navigation__news_link active">Каталог</a>
               </li>
               <li><a href="#">Доставка и оплата</a></li>
               <li><a href="#">О компании</a></li>
@@ -82,6 +75,81 @@
         </div>
       </header>
       <main>
+        <section class="catalog">
+          <ul class="catalog__list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html">Каталог</a></li>
+            <li><a>Сливочное</a></li>
+          </ul>
+          <h2 class="catalog__headline">Сливочное мороженное</h2>
+        </section>
+        <section class="filter">
+          <form class="filter__forma" action="index.html" method="post">
+            <div class="forma_item">
+              <span>Сортировка:</span>
+              <div class="forma__wrapper">
+                <select class="forma_select" name="forma_select">
+                  <option value="по популярности">по популярности</option>
+                  <option value="по популярности">по цене</option>
+                </select>
+              </div>
+            </div>
+            <div class="forma_item">
+              <span>Цена: 100 руб. - 500 руб.</span>
+              <div class="forma__wrapper">
+                <input type="range" min="0" max="100" step="1" value="50">
+              </div>
+            </div>
+            <div class="forma_item">
+              <span>Жирность:</span>
+              <div class="forma__wrapper">
+                <label class="radio_label">
+                  <input class="visually-hidden" type="radio" name="percent" value="0">
+                  <span>0%</span>
+                </label>
+                <label class="radio_label">
+                  <input class="visually-hidden" type="radio" name="percent" value="10">
+                  <span>до 10%</span>
+                </label>
+                <label class="radio_label">
+                  <input class="visually-hidden" type="radio" name="percent" value="<=30">
+                  <span>до 30%</span>
+                </label>
+                <label class="radio_label">
+                  <input class="visually-hidden" type="radio" name="percent" value=">=30">
+                  <span>выше 30%</span>
+                </label>
+              </div>
+            </div>
+            <div class="forma_item">
+              <span>Наполнители:</span>
+              <div class="forma__wrapper">
+                <label class="checkbox_label">
+                  <input class="visually-hidden" type="checkbox" name="chocolate" value="шоколадные">
+                  <span>шоколадные</span>
+                </label>
+                <label class="checkbox_label">
+                  <input class="visually-hidden" type="checkbox" name="chocolate1" value="сахарные присыпки">
+                  <span>сахарные присыпки</span>
+                </label>
+                <label class="checkbox_label">
+                  <input class="visually-hidden" type="checkbox" name="chocolate2" value="фрукты">
+                  <span>фрукты</span>
+                </label>
+                <label class="checkbox_label">
+                  <input class="visually-hidden" type="checkbox" name="chocolate3" value="сиропы">
+                  <span>сиропы</span>
+                </label>
+                <label class="checkbox_label">
+                  <input class="visually-hidden" type="checkbox" name="chocolate4" value="джемы">
+                  <span>джемы</span>
+                </label>
+              </div>
+            </div>
+            <input type="submit" name="submit" value="Применить">
+
+          </form>
+        </section>
         <section class="positions">
           <div class="positions__item">
             <div class="item__img">
@@ -105,7 +173,7 @@
               <span class="price">380<img src="img/rub.svg" alt="Знак рубля">/кг</span>
             </div>
             <span>
-              Сливочное с апельсиновым джемом и цитрусовой стружкой
+              Сливочно-кофейное с кусочками шоколада
             </span>
             <a href="#">Быстрый просмотр</a>
           </div>
@@ -118,7 +186,7 @@
               <span class="price">355<img src="img/rub.svg" alt="Знак рубля">/кг</span>
             </div>
             <span>
-              Сливочное с апельсиновым джемом и цитрусовой стружкой
+              Сливочно-клубничное с присыпкой из белого шоколада
             </span>
             <a href="#">Быстрый просмотр</a>
           </div>
@@ -131,7 +199,7 @@
               <span class="price">415<img src="img/rub.svg" alt="Знак рубля">/кг</span>
             </div>
             <span>
-              Сливочное с апельсиновым джемом и цитрусовой стружкой
+              Сливочное крем-брюле с карамельной подливкой
             </span>
             <a href="#">Быстрый просмотр</a>
           </div>
@@ -144,7 +212,7 @@
               <span class="price">325<img src="img/rub.svg" alt="Знак рубля">/кг</span>
             </div>
             <span>
-              Сливочное с апельсиновым джемом и цитрусовой стружкой
+              Сливочное с брусничным джемом
             </span>
             <a href="#">Быстрый просмотр</a>
           </div>
@@ -157,7 +225,7 @@
               <span class="price">410<img src="img/rub.svg" alt="Знак рубля">/кг</span>
             </div>
             <span>
-              Сливочное с апельсиновым джемом и цитрусовой стружкой
+              Сливочно-черничное с цельными ягодами черники
             </span>
             <a href="#">Быстрый просмотр</a>
           </div>
@@ -170,7 +238,7 @@
               <span class="price">375<img src="img/rub.svg" alt="Знак рубля">/кг</span>
             </div>
             <span>
-              Сливочное с апельсиновым джемом и цитрусовой стружкой
+              Сливочно-лимонное с карамельной присыпкой
             </span>
             <a href="#">Быстрый просмотр</a>
           </div>
@@ -183,7 +251,7 @@
               <span class="price">320<img src="img/rub.svg" alt="Знак рубля">/кг</span>
             </div>
             <span>
-              Сливочное с апельсиновым джемом и цитрусовой стружкой
+              Сливочное с шоколадной стужкой
             </span>
             <a href="#">Быстрый просмотр</a>
           </div>
@@ -271,6 +339,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/feedback_show.js"></script>
-    <script src="js/serch.js"></script>
+    <!-- <script src="js/serch.js"></script> -->
+    <script src="js/catalog.js"></script>
   </body>
 </html>
